@@ -17,14 +17,15 @@ A web application that allows users to create, manage, and track their tasks and
 
 ## Technologies Used
 
-- ReactJS
+- ReactJS v18
 - Redux Toolkit
 - CSS (or a CSS framework like Bootstrap)
 - JavaScript (ES6+)
 - Node.js (for development)
 - Git & GitHub (for version control)
+- MongoDB Database
 
-## Project Structure
+## Project Structure for reference
 
 ```
 project-root/
