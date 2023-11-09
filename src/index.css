@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Agbalumo;
+  
+
+}
+.main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); */
+background-image: url('/public/7561340.jpg');
+}
+
+
+.wrapper{
+  max-width: 1440px;
+  width: 50%;
+  height: 80vh;
+
+  /* overflow-x: hidden;
+  overflow-y: auto; */
+ /* margin-top: 10vh;
+ margin-left: 22vw; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+  border-radius: 10%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* background-color: white; */
+  backdrop-filter: blur(5px);
+  font-family:Agbalumo;
+
+
+  
+  
+}
+.delete-btn{
+  background-color: rgb(236, 60, 60);
+  padding: 0.5vmax;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  width: 50%;
+}
+.addtodo-btn{
+  background-color:#6C757D ;
+  padding: 0.5vmax;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  width: 100%;
+}
+.back-btn{
+  background-color:blue ;
+  padding: 0.5vmax;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  width: 100%;
+}
+.back-btn2{
+  background-color:blue ;
+  padding: 0.5vmax;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  width: 100%;
+}
+
+
+.custom-form{
+  width: 400px;
+  height: auto;
+  margin: 20px auto;
+}
+
+.input-and-btn{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1px;
+  
+}
+
+.todo-box{
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.todo-box .content{
+  display: flex;
+}
+
+.todo-box .content p{
+  margin-top: -6px;
+  margin-left: 6px;
+}
+
+.todo-box span{
+  margin: 0 5px;
+}
+
+.delete-all{
+  width: 400px;
+}
+
+.actions-box{
+  cursor: pointer;
+}
+
+.back-btn{
+  margin-top: 5px;
+  width: 100%;
+}
+.pen:hover {
+  color: yellow;
+  animation: shake 0.5s;
+}
+.tobtn {
+  width: 100%;
+}
+.addtodo-btn:hover .pen {
+    color: yellow;
+    animation: shake 0.5s;
+    
+  }
+button:hover{
+    color: yellow;
+  }
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-1px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(1px);
+  }
+}
+.todo-main{
+  width: 100%;
+  height: 100vh;
+  background-image: url('/public/7561340.jpg');
+
+  
+
+}
+.todo-main input,button{
+  width: 40%;
+}
+.input-main{
+  width: 98vw;
+  display: flex;
+justify-content: center;
+align-items: center ;
+
+
+height: 100vh;
+}
+.all-input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  border: 2px solid red;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+border-radius: 5%;
+backdrop-filter: blur(5px);
+  height: 80vh;
+  width: 40%;
+  
+}
+.detail-main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/public/7561340.jpg');
+
+}
+.detail-wrap{
+  border: 2px solid red;
+  width: 30%;
+  border-radius: 5%;
+  padding: 2%;
+  backdrop-filter: blur(5px);
+
+display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.detail-wrap span{
+color: red;
+}
+.trash:hover{
+  color: red;
+}
+.eye:hover{
+  color: green;
+}
+.edit:hover{
+  color: yellow;
+}
+
+@media  (max-width: 1000px){
+
+.wrapper{
+  width: 87%;
+  padding: 16px;
+  overflow: hidden;
+  height: 63vh;
+}
+.addtodo-btn{
+  width: 50%;
+  margin-left: 3.5rem;
+}
+.back-btn{
+  margin-top: 10px;
+  width: 50%;
+  margin-left: 3.5rem;
+}
+.todo-box{
+  /* justify-content: space-evenly;
+  margin-left: -3rem; */
+  display: flex;
+  width: 19rem;
+}
+.all-input{
+width: 88vw;
+height: 60vh;
+}
+.all-input input{
+  width: 55%;
+}
+.detail-wrap{
+  width: 87%;
+}
+.input-and-btn button{
+  width: 30%;
+  margin-left: 10px;
+
+
+}
+.input-and-btn input{
+
+  width: 50%;
+}
+}
