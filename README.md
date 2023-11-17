@@ -1,12 +1,12 @@
-# Project: ReactJS Todo List with Redux Toolkit
+# Project: Jamming 4 Screen UI Page
 
 ## Project Overview
 
 ### Project Name
-ReactJS Todo List
+Jamming 4 Screen UI Page
 
 ### Description
-A web application that allows users to create, manage, and track their tasks and to-do lists. The project uses ReactJS with Redux Toolkit for state management.
+A web application that Show four screens to wth Video and Audio Funtionality without using webRTC
 
 ### Key Features
 - Add tasks with titles and descriptions.
@@ -26,82 +26,43 @@ A web application that allows users to create, manage, and track their tasks and
 - MongoDB Database
 
 ## Project Structure for reference
-
-```
-project-root/
-│
-├── public/
-│   ├── index.html
-│   ├── favicon.ico
-│   └── ...
-│
-├── src/
-│   ├── components/
-│   │   ├── TaskList.js
-│   │   ├── Task.js
-│   │   └── ...
-│   │
-│   ├── reducers/
-│   │   ├── tasksSlice.js
-│   │   └── ...
-│   │
-│   ├── store.js
-│   ├── index.js
-│   └── ...
-│
-├── package.json
-├── package-lock.json
-├── README.md
-├── .gitignore
-└── ...
-```
+Jamming-4-Screen-UI-Page/
+|-- public/
+|   |-- index.html
+|   |-- favicon.ico
+|-- src/
+|   |-- components/
+|   |   |-- Screen.js
+|   |   |-- VideoPlayer.js
+|   |   |-- AudioPlayer.js
+|   |   |-- ControlPanel.js
+|   |-- styles/
+|   |   |-- main.css
+|   |-- App.js
+|   |-- index.js
+|-- .gitignore
+|-- package.json
+|-- README.md
 
 
-## Redux Toolkit Setup
+## Explanation:
 
-1. Install Redux Toolkit:
+public: This directory contains the static assets that are served as-is. The index.html is the main HTML file for your application.
 
-   ```bash
-   npm install @reduxjs/toolkit react-redux
-   ```
+src: This directory contains the source code of your application.
 
-2. Create a `tasksSlice` using `createSlice` for managing tasks.
+components: This directory contains React components. Each component file represents a part of your application's UI.
 
-3. Configure the Redux store in `store.js` and include the `tasksSlice`.
+Screen.js: React component for displaying a screen.
+VideoPlayer.js: React component for video playback.
+AudioPlayer.js: React component for audio playback.
+ControlPanel.js: React component for controlling video and audio.
+styles: This directory contains stylesheets for your components. main.css is the main stylesheet.
 
-4. Use the `useSelector` and `useDispatch` hooks from `react-redux` to access and modify the store in your components.
+App.js: The main React component that orchestrates the layout and logic of your application.
 
-## Features
+index.js: The entry point of your React application.
 
-- **Add a Task**: Users can add a new task with a title and description.
+.gitignore: This file specifies intentionally untracked files that Git should ignore.
 
-- **Edit and Delete**: Users can edit and delete tasks.
-
-- **Mark as Complete**: Users can mark tasks as complete or active.
-
-- **Filter Tasks**: Users can filter tasks by status (completed, active).
-
-- **Responsive Design**: The app is responsive and works well on both desktop and mobile devices.
-
-## Usage
-
-1. Navigate to the app's homepage.
-
-2. Add a new task using the "Add Task" button.
-
-3. Edit or delete tasks by clicking the task's corresponding buttons.
-
-4. Mark tasks as complete by clicking the checkbox.
-
-5. Filter tasks by selecting "Active" or "Completed" at the top of the list.
-
-## Future Enhancements
-
-- User authentication to save tasks per user.
-- Data persistence with a backend or local storage.
-- Task deadlines and priorities.
-
-## Known Issues
-
-- Issue 1: Description of the issue and steps to reproduce.
-- Issue 2: Description of the issue and steps to reproduce.
+package.json: This file contains metadata about the project and its dependencies.
