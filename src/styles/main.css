@@ -1,10 +1,8 @@
 * {
   box-sizing: border-box;
-
 }
 h1 {
   margin: 0;
-
 }
 
 /* Reset some default margin and padding on the body element */
@@ -13,30 +11,40 @@ body {
   font-family: "Arial", sans-serif;
   color: white;
 }
-
+.heading {
+  font-size: 2.2vmax;
+}
 .screen-main {
   height: 100vh;
   width: 100vw;
   background-color: #1f253a;
   /* border: 2px solid red; */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
-.logo{
-  padding:1%;
-  display:flex;
+.logo {
+  padding: 1%;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 2%;
   padding-right: 2%;
+  /* width: 2vmax; */
 }
-.title{
-  padding-right:9rem;
+.CPFunction1{
+
+ display: none;
 }
-.invite{
+.logo > img {
+  width: 7vmax;
+}
+.title {
+  padding-right: 9rem;
+}
+.invite {
   border: 2px solid yellow;
   display: flex;
   padding: 10px;
-  gap:8px;
+  gap: 8px;
   border-radius: 10px;
   width: 6%;
 }
@@ -49,58 +57,53 @@ body {
   background-color: grey;
 }
 
-.invite div{
+.invite div {
   border: 2px solid yellow;
   background-color: yellow;
-  color:#1f253a;
+  color: #1f253a;
   font-weight: 100;
   /* padding: 0px; */
   width: 50%;
-  height:2.5vh;
-border-radius: 20%;
-display: flex;
-justify-content: center;
-align-items: center;
- 
+  height: 2.5vh;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.icons{
-  color:yellow;
-
+.icons {
+  color: yellow;
 }
-.sidebar{
+.sidebar {
   /* border:2px solid red; */
   display: flex;
   flex-direction: column;
   width: 5%;
-  gap:5%;
+  gap: 5%;
 
   align-items: center;
   height: 88%;
 }
-.video{
-  border:5px solid yellow;
+.video {
+  border: 5px solid yellow;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5%;
-  border-right:none;
-  border-top:none;
-  border-bottom:none;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
   border-radius: 5%;
-
-
 }
-.main-video{
+.main-video {
   width: 100%;
-  height:89%;
+  height: 89%;
   /* border:2px solid yellow; */
-   display: flex;
-
+  display: flex;
 }
-.video-call{
+.video-call {
   /* border: 2px solid yellow; */
-  width: 100%;
+  width: 92%;
   height: 88%;
   display: flex;
   flex-direction: column;
@@ -108,9 +111,8 @@ align-items: center;
   align-items: center;
   background-color: black;
   border-radius: 10px;
-
 }
-.video-section{
+.video-section {
   width: 100%;
   /* border:2px solid green; */
   border-radius: 30px;
@@ -119,29 +121,320 @@ align-items: center;
   justify-content: center;
   align-items: center;
 }
-.video-section > div{
-  border:2px solid orange;
+.video-section > div {
+  border: 2px solid orange;
   width: 48%;
   height: 90%;
   margin: 1%;
- border-radius: 20px;
- overflow: hidden;
-
-
+  border-radius: 20px;
+  overflow: hidden;
 }
-.host div{
+.host > div:first-child {
   /* border:2px solid red; */
-  width: 15%;
+  width: 80px;
   padding: 1%;
   border-bottom-right-radius: 20px;
-  background-color: #FFC701;
-  color:#1f253a;
-  border-color: #FFC701;
+  background-color: #ffc701;
+  color: #1f253a;
+  border-color: #ffc701;
   /* margin-left: ; */
+}
+.control {
+  /* border: 2px solid red; */
+  width: 92vw;
+  margin-top: -70px;
+  margin-left: 5%;
+  height: 8%;
+  display: flex;
+}
+
+.f1 {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  /* border: 2px solid green; */
+  width: 50%;
+  /* justify-content: center; */
+}
+.function {
+  display: grid;
+  grid-template-columns: repeat(
+    5,
+    1fr
+  ); /* Adjust the number of columns as needed */
+  gap: 0px; /* Adjust the gap between grid items as needed */
+  width: 88%;
+  border: 2px solid gray;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.function > div {
+  border-left: 2px solid gray;
+  border-right: 2px solid gray;
+  padding: 5px;
+  text-align: center;
+}
+.function > div:first-child {
+  border: none;
+}
+
+.function > div:last-child {
+  border: none;
+}
+.function h3 {
+  margin: 0;
+}
+
+.function h6 {
+  margin: 0;
+  color: #888;
+}
+.play {
+  border: 2px solid white;
+  padding: 0.5%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play > div {
+  background-color: red;
+
+  border: 2px solid red;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.f2 {
+  /* border: 2px solid yellow; */
+  width: 50%;
+}
+
+/* .end-jam > div {
+  text-align: center;
+  padding: 8px;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 30%;
+} */
+.end-jam {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding-left: 20%;
+}
+.end-jam > div {
+  border: 2px solid grey;
+  height: 70%;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.end-jam button,
+.end-jam svg {
+  /* font-size: 1.5rem; */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.end-jam button:hover,
+.end-jam svg:hover {
+  color: #ffc701;
+}
+.end-jam > div:first-child {
+  width: 20%;
+  height: 80%;
+  border-radius: 5px;
+
+  background-color: red;
+  border: 1px solid red;
+}
+.end-btn {
+  font-size: 1.2vmax;
+  color: white;
+}
+.sub-menu {
+  font-size: 15px;
+  margin-top: -12px;
+  margin-right: -20px;
+  padding-left: 1px;
+}
+.userName {
+  /* border: 2px solid red; */
+  height: 90%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding-right: 4%;
+}
+.userName > div {
+  border: 2px solid green;
+  width: 5vmax;
+  height: 3vmax;
+  /* text-align: center; */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.host > .userName {
+  height: 77%;
+}
+.mobile-sidebar{
+  display: none;
+}
+.CPFunction2{
+  display: none;
 
 }
-.control{
-  background-color: yellow;
-  width: 80vw;
-  margin-top: -50px;
+
+/* Default styles for all screen sizes */
+
+/* Media query for screens smaller than 600 pixels */
+@media only screen and (max-width: 600px) {
+  .screen-main {
+    overflow: hidden;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile-sidebar{
+    display: block;
+  }
+
+  .title {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .invite {
+    border: 2px solid yellow;
+    display: flex;
+    padding: 10px;
+    gap: 8px;
+    border-radius: 10px;
+    width: 31px;
+    height: 30px;
+  }
+  .invite span {
+    display: none;
+  }
+  .invite div {
+    width: 20px !important;
+    height: 5px;
+    padding: 8px;
+    /* display: flex;
+justify-content: center;
+align-items: center; */
+    margin-top: -8px;
+    margin-left: -6px;
+    
+  }
+  .logo > img, .title{
+    display: none;
+  }
+  .CPFunction1{
+    /* border: 2px solid red;
+     */
+
+    display: block;
+    
+   }
+   .CPFunction1  .play{
+    display: none;
+   }
+   .f1{
+    width: 98%;
+   }
+   .function{
+    height: 60px;
+   }
+   .function h3{
+    font-size: 2vmax;
+   }
+   .function > div:nth-child(4) {
+    width: 80px;
+  }
+ .mobile-sidebar{
+  /* border: 2px solid red; */
+  margin-top: 10px;
+  transform: rotate(360deg);
+ }
+
+ .main-video > .sidebar{
+  display: none;
+ }
+ .sidebar{
+  flex-direction: row;
+  width: 20%;
+  gap: 80%;
+  /* border: 2px solid green; */
+  padding-left: 18px;
+ }
+ .video-call{
+  width: 90%;
+  height: 75%;
+  /* border: 2px solid green; */
+ }
+.main-video{
+  justify-content: center;
+ margin-top: 10px;
+}
+.ControlPanel{
+  display: none;
+}
+
+.f2{
+  border: 2px green solid;
+  width: 95%;
+  height: 70px;
+}
+.CPFunction2{
+  display: block;
+  margin-top: -160px;
+  border: 2px solid red;
+  
+}
+.end-jam{
+  align-items: center;
+  justify-content: start;
+  border: 2px solid yellow;
+  padding-left: 12px;
+
+}
+.play{
+  width: 10%;
+  position: absolute;
+  margin-top: -55px;
+  margin-left: 290px;
+}
+
+
+
+
+
+
+}
+
+/* Media query for screens between 600 and 900 pixels */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  /* Styles for screens between 600 and 900 pixels */
+}
+
+/* Media query for screens larger than 900 pixels */
+@media only screen and (min-width: 901px) {
+  /* Styles for screens larger than 900 pixels */
+}
+
+/* Default styles for all screen sizes */
+
+/* Media query for mobile devices in landscape orientation */
+@media only screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+  /* Styles for mobile devices in landscape orientation */
 }
