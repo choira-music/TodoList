@@ -103,7 +103,7 @@ body {
 }
 .video-call {
   /* border: 2px solid yellow; */
-  width: 92%;
+  width: 90%;
   height: 88%;
   display: flex;
   flex-direction: column;
@@ -154,6 +154,8 @@ body {
   gap: 2%;
   /* border: 2px solid green; */
   width: 50%;
+  /* height: 4vmax; */
+
   /* justify-content: center; */
 }
 .function {
@@ -161,12 +163,15 @@ body {
   grid-template-columns: repeat(
     5,
     1fr
-  ); /* Adjust the number of columns as needed */
-  gap: 0px; /* Adjust the gap between grid items as needed */
+  ); 
+  gap: 0px; 
   width: 88%;
+  /* height: 90%; */
   border: 2px solid gray;
   border-radius: 10px;
   overflow: hidden;
+ 
+  
 }
 
 .function > div {
@@ -175,6 +180,80 @@ body {
   padding: 5px;
   text-align: center;
 }
+.function > div > input{
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+}
+.function > div:first-child > h3{
+width: 100%;
+height: 100%;
+}
+.piano{
+  padding-top: 5%;
+}
+.function > div > h6{
+/* border: 2px solid red; */
+padding-right: 10%;
+}
+.div4{
+  width: 50%;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+}
+.div5 > h3 > input{
+width: 40%;
+text-align: center;
+background-color: transparent;
+border: none;
+color: white;
+outline: none;
+}
+.function > div > input::placeholder  {
+color: white;
+}
+ .div5 input::placeholder {
+  color: white;
+}
+ .div4::placeholder {
+  color: white;
+}
+.pointer {
+  cursor: pointer;
+}
+.unselectable {
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standard syntax */
+}
+.pointer {
+  cursor: pointer;
+}
+
+.div4 input[type="number"] {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+.div4 input[type="number"]::-webkit-inner-spin-button,
+.div4 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+
+
+
+
 .function > div:first-child {
   border: none;
 }
@@ -209,26 +288,28 @@ body {
 .f2 {
   /* border: 2px solid yellow; */
   width: 50%;
+  /* border: 2px solid green; */
+  height: 4vmax;
+  
 }
 
-/* .end-jam > div {
-  text-align: center;
-  padding: 8px;
-  border: 2px solid white;
-  border-radius: 10px;
-  width: 30%;
-} */
+
+
 .end-jam {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
   height: 100%;
+  width: 96%;
   padding-left: 20%;
+  gap: 4%;
+  /* border: 2px solid red; */
+
 }
 .end-jam > div {
   border: 2px solid grey;
-  height: 70%;
-  width: 15%;
+  height: 80%;
+  width: 11%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,6 +322,7 @@ body {
   border: none;
   cursor: pointer;
 }
+
 
 .end-jam button:hover,
 .end-jam svg:hover {
@@ -261,8 +343,14 @@ body {
 .sub-menu {
   font-size: 15px;
   margin-top: -12px;
-  margin-right: -20px;
+  margin-right: -1px;
   padding-left: 1px;
+}
+.end-jam > div:nth-child(2){
+  padding-left: 10px;
+}
+.end-jam > div:nth-child(3){
+  padding-left: 10px;
 }
 .userName {
   /* border: 2px solid red; */
@@ -292,13 +380,21 @@ body {
   display: none;
 
 }
+.MobFooter{
+  display: none;
+}
 
 /* Default styles for all screen sizes */
 
 /* Media query for screens smaller than 600 pixels */
 @media only screen and (max-width: 600px) {
   .screen-main {
-    overflow: hidden;
+     /* position: fixed;
+  width: 100%;
+  height: 100%; */
+  overflow: hidden;
+  position: fixed;
+ 
   }
   .logo {
     display: flex;
@@ -346,14 +442,21 @@ align-items: center; */
     display: block;
     
    }
+   .CPFunction1 .function > div {
+padding-top: 13px;
+   }
+   .CPFunction1 .function > div:first-child{
+padding-top: 20px;
+   }
    .CPFunction1  .play{
     display: none;
    }
    .f1{
-    width: 98%;
+    width: 99%;
    }
    .function{
     height: 60px;
+    width: 100%;
    }
    .function h3{
     font-size: 2vmax;
@@ -391,33 +494,77 @@ align-items: center; */
 }
 
 .f2{
-  border: 2px green solid;
-  width: 95%;
+  /* border: 2px green solid; */
+  width: 99%;
   height: 70px;
 }
-.CPFunction2{
+.MobFooter{
   display: block;
   margin-top: -160px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   
 }
-.end-jam{
+.mob-end-jam{
+  display: flex;
   align-items: center;
-  justify-content: start;
-  border: 2px solid yellow;
-  padding-left: 12px;
+  justify-content: space-evenly;
+  height: 100%;
+  padding-left: 1%;
 
 }
-.play{
+.mob-end-jam > div {
+  border: 2px solid grey;
+  height: 50%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+/* .play{
   width: 10%;
   position: absolute;
   margin-top: -55px;
   margin-left: 290px;
+} */
+.mob-end-jam button,
+.mob-end-jam svg {
+  /* font-size: 1.5rem; */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.mob-end-jam button:hover,
+.mob-end-jam svg:hover {
+  color: #ffc701;
 }
 
+.mob-end-jam > div:last-child {
+  width: 22%;
+  height: 45%;
+  border-radius: 5px;
 
+  background-color: red;
+  border: 1px solid red;
+}
+.mob-end-jam > div:nth-child(5){
+  border: none;
 
-
+}
+.mob-end-btn {
+  font-size: 2vmax;
+  color: white;
+}
+.userName > div{
+ padding-left: 30px;
+ padding-right: 30px;
+ height: 3.5vmax;
+ /* padding-top: 10%; */
+}
+.function > div > h6{
+  /* border: 2px solid red; */
+  padding-right:0;
+  }
 
 
 }

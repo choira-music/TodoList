@@ -10,6 +10,7 @@ import SideBar from "./SideBar";
 import CPFunction1 from "./CPFunction1";
 import Play from "./Play";
 import CPFunction2 from "./CPFunction2";
+import MobFooter from "./MobFooter";
 
 function Screen() {
   return (
@@ -51,12 +52,9 @@ function Screen() {
         <div className="ControlPanel">
         <ControlPanel />
         </div>
-        <div className="CPFunction2">
+        <div className="MobFooter">
 
-        <CPFunction2>
-        </CPFunction2>
-
-          <Play></Play>
+        <MobFooter/>
         </div>
 
        

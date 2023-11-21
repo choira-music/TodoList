@@ -13,12 +13,13 @@ function CPFunction2() {
        <div>
          <button className="end-btn">End Jam</button>
        </div>
-       <div><FaMicrophone /> <br /> &nbsp;
+       <div><FaMicrophone /> <br /> 
        <CiMenuKebab  className="sub-menu"  /></div>
-       <div><IoVideocam /> <br /> &nbsp;
+       <div><IoVideocam /> <br /> 
        <CiMenuKebab  className="sub-menu" /></div>
        <div><HiMiniSpeakerWave /></div>
-       <div><CiMenuKebab /></div>
+       <div ><CiMenuKebab style={{ transform: 'rotate(90deg)' }} /></div>
+
      </div>
      </div> 
     </>
