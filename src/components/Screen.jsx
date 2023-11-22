@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/main.css";
 import choira from "../images/choira.svg";
 import { BsFillCameraVideoFill } from "react-icons/bs";
@@ -11,8 +11,14 @@ import CPFunction1 from "./CPFunction1";
 import Play from "./Play";
 import CPFunction2 from "./CPFunction2";
 import MobFooter from "./MobFooter";
+import Host from "./Host";
 
 function Screen() {
+  const [selectedValue, setSelectedValue] = useState("1");
+
+  const handleSelectedValueChange = (value) => {
+    setSelectedValue(value);
+  };
   return (
     <>
       <div className="screen-main">
@@ -38,15 +44,16 @@ function Screen() {
         {/* main section start here ----------- */}
         <div className="mobile-sidebar">
 
-        <SideBar/>
+        <SideBar onSelectedValueChange={handleSelectedValueChange} />
         </div>
         <div className="main-video">
           {/* sidebar section start here------- */}
-          <SideBar />
+          <SideBar onSelectedValueChange={handleSelectedValueChange} />
           {/* sidebar section ends here ------------ */}
 
           {/* video call section start here -------- */}
-          <Video />
+          {/* <Video /> */}
+          <Host screens={parseInt(selectedValue)} />
           {/* main section ends here ------------------ */}
         </div>
         <div className="ControlPanel">

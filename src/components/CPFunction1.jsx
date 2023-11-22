@@ -5,6 +5,7 @@ import Play from "./Play";
 function CPFunction1() {
   const [val, setVal] = useState(120);
   const [bar, setBar] = useState("0004");
+  const [beat, setBeat] = useState(1);
   return (
     <>
       <div className="f1 unselectable">
@@ -16,48 +17,52 @@ function CPFunction1() {
           </div>
           <div>
             <h3>
-            <span>
-  <strong className="pointer" onClick={() =>
-    setBar((bar) => {
-      const newBar = parseInt(bar, 10) - 1;
-      return newBar >= 0 ? `0000${newBar}`.slice(-4) : '000';
-    })
-  }>
-    -
-  </strong>
-  <input
-    type="number"
-    className="div4 pointer"
-    value={bar}
-    onChange={(e) => setBar(parseInt(e.target.value, 10))}
-  />
-  <strong className="pointer" onClick={() =>
-    setBar((bar) => {
-      const newBar = parseInt(bar, 10) + 1;
-      return `0000${newBar}`.slice(-4);
-    })
-  }>
-    +
-  </strong>
-</span>
-
-
+              <span>
+                <strong
+                  className="pointer"
+                  onClick={() =>
+                    setBar((bar) => {
+                      const newBar = parseInt(bar, 10) - 1;
+                      return newBar >= 0 ? `0000${newBar}`.slice(-4) : "000";
+                    })
+                  }
+                >
+                  -
+                </strong>
+                <input
+                  type="number"
+                  className="div4 pointer"
+                  value={bar}
+                  onChange={(e) => setBar(parseInt(e.target.value, 10))}
+                />
+                <strong
+                  className="pointer"
+                  onClick={() =>
+                    setBar((bar) => {
+                      const newBar = parseInt(bar, 10) + 1;
+                      return `0000${newBar}`.slice(-4);
+                    })
+                  }
+                >
+                  +
+                </strong>
+              </span>
             </h3>
             <h6>Bar</h6>
           </div>
           <div>
             <h3>
               <span>
-                <strong className="pointer" onClick={() => setVal(val - 1)}>
+                <strong className="pointer" onClick={() => setBeat(beat - 1)}>
                   -
                 </strong>
                 <input
                   type="number"
                   className="div4 pointer"
-                  value={val}
-                  onChange={(e) => setVal(parseInt(e.target.value, 10))}
+                  value={beat}
+                  onChange={(e) => setBeat(parseInt(e.target.value, 10))}
                 />
-                <strong className="pointer" onClick={() => setVal(val + 1)}>
+                <strong className="pointer" onClick={() => setBeat(beat + 1)}>
                   +
                 </strong>
               </span>

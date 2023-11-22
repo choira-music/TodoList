@@ -30,9 +30,8 @@ body {
   padding-right: 2%;
   /* width: 2vmax; */
 }
-.CPFunction1{
-
- display: none;
+.CPFunction1 {
+  display: none;
 }
 .logo > img {
   width: 7vmax;
@@ -102,7 +101,7 @@ body {
   display: flex;
 }
 .video-call {
-  /* border: 2px solid yellow; */
+  border: 2px solid yellow;
   width: 90%;
   height: 88%;
   display: flex;
@@ -121,6 +120,24 @@ body {
   justify-content: center;
   align-items: center;
 }
+.video-section-3user {
+  width: 100%;
+  border: none !important;
+  border-radius: 30px;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.video-section-3user > div {
+  border: 2px solid orange;
+  width: 98%;
+  height: 90%;
+  margin: 1%;
+  border-radius: 20px;
+  overflow: hidden;
+}
 .video-section > div {
   border: 2px solid orange;
   width: 48%;
@@ -128,6 +145,37 @@ body {
   margin: 1%;
   border-radius: 20px;
   overflow: hidden;
+}
+.video-section-host {
+  width: 100%;
+  /* border:2px solid green; */
+  border-radius: 30px;
+  height: 99%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-section-host > div {
+  border: 2px solid orange;
+  width: 96%;
+  height: 96%;
+  margin: 1%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.video-section-host > .host > div:first-child {
+  /* border:2px solid red; */
+  width: 100px;
+  padding: 1%;
+  height: 40px;
+  border-bottom-right-radius: 20px;
+  background-color: #ffc701;
+  color: #1f253a;
+  border-color: #ffc701;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* margin-left: ; */
 }
 .host > div:first-child {
   /* border:2px solid red; */
@@ -138,6 +186,15 @@ body {
   color: #1f253a;
   border-color: #ffc701;
   /* margin-left: ; */
+}
+.video-section-3user > .userName > div {
+  margin-bottom: 20px;
+}
+.video-section-host > .host > .userName > div {
+  margin-bottom: -60px;
+}
+.second-user > .userName > div {
+  margin-bottom: -35px;
 }
 .control {
   /* border: 2px solid red; */
@@ -160,18 +217,13 @@ body {
 }
 .function {
   display: grid;
-  grid-template-columns: repeat(
-    5,
-    1fr
-  ); 
-  gap: 0px; 
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0px;
   width: 88%;
   /* height: 90%; */
   border: 2px solid gray;
   border-radius: 10px;
   overflow: hidden;
- 
-  
 }
 
 .function > div {
@@ -180,7 +232,7 @@ body {
   padding: 5px;
   text-align: center;
 }
-.function > div > input{
+.function > div > input {
   width: 100%;
   text-align: center;
   background-color: transparent;
@@ -188,18 +240,18 @@ body {
   color: white;
   outline: none;
 }
-.function > div:first-child > h3{
-width: 100%;
-height: 100%;
+.function > div:first-child > h3 {
+  width: 100%;
+  height: 100%;
 }
-.piano{
+.piano {
   padding-top: 5%;
 }
-.function > div > h6{
-/* border: 2px solid red; */
-padding-right: 10%;
+.function > div > h6 {
+  /* border: 2px solid red; */
+  padding-right: 10%;
 }
-.div4{
+.div4 {
   width: 50%;
   text-align: center;
   background-color: transparent;
@@ -207,21 +259,21 @@ padding-right: 10%;
   color: white;
   outline: none;
 }
-.div5 > h3 > input{
-width: 40%;
-text-align: center;
-background-color: transparent;
-border: none;
-color: white;
-outline: none;
+.div5 > h3 > input {
+  width: 40%;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
 }
-.function > div > input::placeholder  {
-color: white;
-}
- .div5 input::placeholder {
+.function > div > input::placeholder {
   color: white;
 }
- .div4::placeholder {
+.div5 input::placeholder {
+  color: white;
+}
+.div4::placeholder {
   color: white;
 }
 .pointer {
@@ -248,12 +300,6 @@ color: white;
   margin: 0;
 }
 
-
-
-
-
-
-
 .function > div:first-child {
   border: none;
 }
@@ -278,9 +324,8 @@ color: white;
   align-items: center;
 }
 .play > div {
-  background-color: red;
+  /* background-color: red; */
 
-  border: 2px solid red;
   border-radius: 50%;
   padding: 12px;
 }
@@ -290,10 +335,7 @@ color: white;
   width: 50%;
   /* border: 2px solid green; */
   height: 4vmax;
-  
 }
-
-
 
 .end-jam {
   display: flex;
@@ -304,7 +346,6 @@ color: white;
   padding-left: 20%;
   gap: 4%;
   /* border: 2px solid red; */
-
 }
 .end-jam > div {
   border: 2px solid grey;
@@ -322,7 +363,6 @@ color: white;
   border: none;
   cursor: pointer;
 }
-
 
 .end-jam button:hover,
 .end-jam svg:hover {
@@ -346,10 +386,10 @@ color: white;
   margin-right: -1px;
   padding-left: 1px;
 }
-.end-jam > div:nth-child(2){
+.end-jam > div:nth-child(2) {
   padding-left: 10px;
 }
-.end-jam > div:nth-child(3){
+.end-jam > div:nth-child(3) {
   padding-left: 10px;
 }
 .userName {
@@ -373,14 +413,25 @@ color: white;
 .host > .userName {
   height: 77%;
 }
-.mobile-sidebar{
+.mobile-sidebar {
   display: none;
 }
-.CPFunction2{
+.CPFunction2 {
   display: none;
+}
+.MobFooter {
+  display: none;
+}
+.dark-red {
+  background-color: rgb(156, 5, 5);
+  border: 2px solid rgb(156, 5, 5);
+}
 
+.normal-red {
+  background-color: red;
+  border: 2px solid red;
 }
-.MobFooter{
+.display-None {
   display: none;
 }
 
@@ -389,19 +440,18 @@ color: white;
 /* Media query for screens smaller than 600 pixels */
 @media only screen and (max-width: 600px) {
   .screen-main {
-     /* position: fixed;
+    /* position: fixed;
   width: 100%;
   height: 100%; */
-  overflow: hidden;
-  position: fixed;
- 
+    overflow: hidden;
+    position: fixed;
   }
   .logo {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .mobile-sidebar{
+  .mobile-sidebar {
     display: block;
   }
 
@@ -430,143 +480,143 @@ justify-content: center;
 align-items: center; */
     margin-top: -8px;
     margin-left: -6px;
-    
   }
-  .logo > img, .title{
+  .logo > img,
+  .title {
     display: none;
   }
-  .CPFunction1{
+  .CPFunction1 {
     /* border: 2px solid red;
      */
 
     display: block;
-    
-   }
-   .CPFunction1 .function > div {
-padding-top: 13px;
-   }
-   .CPFunction1 .function > div:first-child{
-padding-top: 20px;
-   }
-   .CPFunction1  .play{
+  }
+  .CPFunction1 .function > div {
+    padding-top: 13px;
+  }
+  .CPFunction1 .function > div:first-child {
+    padding-top: 20px;
+  }
+  .CPFunction1 .play {
     display: none;
-   }
-   .f1{
+  }
+  .f1 {
     width: 99%;
-   }
-   .function{
+  }
+  .function {
     height: 60px;
     width: 100%;
-   }
-   .function h3{
+  }
+  .function h3 {
     font-size: 2vmax;
-   }
-   .function > div:nth-child(4) {
+  }
+  .function > div:nth-child(4) {
     width: 80px;
   }
- .mobile-sidebar{
-  /* border: 2px solid red; */
-  margin-top: 10px;
-  transform: rotate(360deg);
- }
+  .mobile-sidebar {
+    /* border: 2px solid red; */
+    margin-top: 10px;
+    transform: rotate(360deg);
+  }
 
- .main-video > .sidebar{
-  display: none;
- }
- .sidebar{
-  flex-direction: row;
-  width: 20%;
-  gap: 80%;
-  /* border: 2px solid green; */
-  padding-left: 18px;
- }
- .video-call{
-  width: 90%;
-  height: 75%;
-  /* border: 2px solid green; */
- }
-.main-video{
-  justify-content: center;
- margin-top: 10px;
-}
-.ControlPanel{
-  display: none;
-}
+  .main-video > .sidebar {
+    display: none;
+  }
+  .sidebar {
+    flex-direction: row;
+    width: 20%;
+    gap: 80%;
+    /* border: 2px solid green; */
+    padding-left: 18px;
+  }
+  .video-call {
+    width: 90%;
+    height: 75%;
+    /* border: 2px solid green; */
+  }
+  .main-video {
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .ControlPanel {
+    display: none;
+  }
 
-.f2{
-  /* border: 2px green solid; */
-  width: 99%;
-  height: 70px;
-}
-.MobFooter{
-  display: block;
-  margin-top: -160px;
-  /* border: 2px solid red; */
-  
-}
-.mob-end-jam{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 100%;
-  padding-left: 1%;
-
-}
-.mob-end-jam > div {
-  border: 2px solid grey;
-  height: 50%;
-  width: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-}
-/* .play{
+  .f2 {
+    /* border: 2px green solid; */
+    width: 99%;
+    height: 70px;
+  }
+  .MobFooter {
+    display: block;
+    margin-top: -160px;
+    /* border: 2px solid red; */
+  }
+  .mob-end-jam {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    padding-left: 1%;
+  }
+  .mob-end-jam > div {
+    border: 2px solid grey;
+    height: 50%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  /* .play{
   width: 10%;
   position: absolute;
   margin-top: -55px;
   margin-left: 290px;
 } */
-.mob-end-jam button,
-.mob-end-jam svg {
-  /* font-size: 1.5rem; */
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-.mob-end-jam button:hover,
-.mob-end-jam svg:hover {
-  color: #ffc701;
-}
-
-.mob-end-jam > div:last-child {
-  width: 22%;
-  height: 45%;
-  border-radius: 5px;
-
-  background-color: red;
-  border: 1px solid red;
-}
-.mob-end-jam > div:nth-child(5){
-  border: none;
-
-}
-.mob-end-btn {
-  font-size: 2vmax;
-  color: white;
-}
-.userName > div{
- padding-left: 30px;
- padding-right: 30px;
- height: 3.5vmax;
- /* padding-top: 10%; */
-}
-.function > div > h6{
-  /* border: 2px solid red; */
-  padding-right:0;
+  .mob-end-jam button,
+  .mob-end-jam svg {
+    /* font-size: 1.5rem; */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .mob-end-jam button:hover,
+  .mob-end-jam svg:hover {
+    color: #ffc701;
   }
 
+  .mob-end-jam > div:last-child {
+    width: 22%;
+    height: 45%;
+    border-radius: 5px;
 
+    background-color: red;
+    border: 1px solid red;
+  }
+  .mob-end-jam > div:nth-child(5) {
+    border: none;
+  }
+  .mob-end-btn {
+    font-size: 2vmax;
+    color: white;
+  }
+  .userName > div {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 3.5vmax;
+    /* padding-top: 10%; */
+  }
+  .function > div > h6 {
+    /* border: 2px solid red; */
+    padding-right: 0;
+  }
+  .function div:nth-child(2) {
+    width: 80px;
+  }
+  .function div:nth-child(3) {
+    width: 62px;
+  }
 }
 
 /* Media query for screens between 600 and 900 pixels */
